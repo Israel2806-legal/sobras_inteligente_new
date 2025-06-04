@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: lightgreen;
+    width: 100%;
+    padding: 0px 20px 20px 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header img {
+    max-height: 80px;
+    padding: 10px;
+}
+
+header h1 {
+    font-size: 30px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    background-color: antiquewhite;
+}
+
+.container {
+    padding: 30px;
+    max-width: 800px;
+    margin: auto;
+}
+
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 30px;
+    padding: 12px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+th {
+    background-color: #c3f8c7;
+}
+
+.add-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 25px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.add-btn:hover {
+    background-color: #45a049;
+}
+
+.button-voltar {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 25px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button-voltar:hover {
+    background-color: #45a049;
+}

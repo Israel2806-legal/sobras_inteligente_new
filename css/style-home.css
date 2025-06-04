@@ -1,0 +1,167 @@
+/* === Reset básico === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    background: url("../imagens/fundo-cozinha.png") no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+}
+
+/* === NAVBAR === */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Meu Perfil */
+.perfil-container a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    gap: 10px;
+}
+
+.perfil-foto img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+/* Botão Sair */
+.nav-right a {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+    font-weight: bold;
+}
+
+.nav-right a:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* Ícone Hamburger */
+.hamburger {
+    display: none; /* Escondido por padrão */
+    flex-direction: column;
+    cursor: pointer;
+    gap: 4px;
+}
+
+.hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+}
+
+/* Menu Mobile */
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    position: absolute;
+    top: 60px;
+    right: 30px;
+    border-radius: 10px;
+}
+
+.mobile-menu.active {
+    display: flex;
+}
+
+.mobile-menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+/* === HEADER === */
+header {
+    text-align: center;
+    margin-top: 40px;
+}
+
+header h1 {
+    font-size: 2.8rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+/* === MAIN AREA === */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.opcoes-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+
+.opcao {
+    text-decoration: none;
+    color: white;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.opcao:hover {
+    transform: scale(1.05);
+}
+
+.opcao img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+/* === RESPONSIVO === */
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-right {
+        display: none;
+    }
+
+    .perfil-container {
+        display: none;
+    }
+
+    nav {
+        justify-content: flex-end;
+    }
+
+    header h1 {
+        font-size: 2rem;
+        padding: 0 10px;
+    }
+
+    .opcao {
+        width: 90%;
+    }
+}

@@ -1,0 +1,1 @@
+document.querySelector('form').onsubmit = function() { return true; };
